@@ -7,4 +7,12 @@ export default class Planets {
     this.age = parseInt((this.age /= .24).toFixed());
 
   }
+  checkVenus() {
+    this.age = parseInt((this.age /= .62).toFixed());
+
+  }
+  checkMars() {
+    
+
+  }
 }
