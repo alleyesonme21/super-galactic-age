@@ -15,4 +15,8 @@ export default class Planets {
     this.age = parseInt((this.age /= 1.88).toFixed());
     
   }
+  checkJupiter() {
+    this.age = parseInt((this.age /= 11.86).toFixed());
+    
+  }
 }
