@@ -19,4 +19,14 @@ export default class Planets {
     this.age = parseInt((this.age /= 11.86).toFixed());
     
   }
+
+  expectancyMercury() {
+    this.checkMercury();
+    const mercury = Math.round(this.age - (this.lifeExpectancy/0.24));
+    if(mercury > 0) {
+      return `You have ${mercury} left to live`;
+    } else if(mercury < 0) { 
+      return `You have lived ${mercury} past your life expectancy`;
+    }
+  }
 }
