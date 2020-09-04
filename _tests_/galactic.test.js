@@ -26,7 +26,7 @@ describe('Planets', () => {
   })
   test("It will show you the users current age in Jupiter", () => {
     planets.checkJupiter();
-    expect(planets.age).toEqual(20)
+    expect(planets.age).toEqual(3)
   
   })
   
