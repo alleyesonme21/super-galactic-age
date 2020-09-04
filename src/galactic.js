@@ -38,6 +38,16 @@ export default class Planets {
       return `You have lived ${venus} past your life expectancy`;
     }
   }
+  expectancyMars() {
+    this.checkMars();
+    const mars = Math.round(this.age - (this.lifeExpectancy/0.24));
+    if(mars > 0) {
+      return `You have ${mars} left to live`;
+    } else if(mars < 0) { 
+      return `You have lived ${mars} past your life expectancy`;
+    }
+  }
+
 
 
 
