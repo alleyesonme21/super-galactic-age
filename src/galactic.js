@@ -12,7 +12,7 @@ export default class Planets {
 
   }
   checkMars() {
+    this.age = parseInt((this.age /= 1.88).toFixed());
     
-
   }
 }
