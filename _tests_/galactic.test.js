@@ -18,4 +18,11 @@ describe('Planets', () => {
     planets.checkVenus();
     expect(planets.age).toEqual(61)
   })
+
+  test("It will show you the users current age in Venus", () => {
+    planets.checkMars();
+    expect(planets.age).toEqual(
+    )
+  })
+  
 })
