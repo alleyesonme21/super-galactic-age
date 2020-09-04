@@ -38,7 +38,7 @@ describe('Planets', () => {
   });
 
   test("It will show the users'years left to live on Mars", () => {
-    expect(planets.expectancyMars()).toBe("")
+    expect(planets.expectancyMars()).toBe("You have lived -355 past your life expectancy")
   });
   
 })
