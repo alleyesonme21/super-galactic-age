@@ -29,4 +29,16 @@ export default class Planets {
       return `You have lived ${mercury} past your life expectancy`;
     }
   }
+  expectancyVenus() {
+    this.checkVenus();
+    const venus = Math.round(this.age - (this.lifeExpectancy/0.24));
+    if(venus > 0) {
+      return `You have ${venus} left to live`;
+    } else if(venus < 0) { 
+      return `You have lived ${venus} past your life expectancy`;
+    }
+  }
+
+
+
 }
