@@ -50,7 +50,10 @@ _The program calculates the life expectancy of a user on Jupiter_
 - Git clone 
 - Open terminal 
 - Cd super-galactic-age
-- Open in vsCode 
+- Open in vsCode
+- npm install
+- Npm run build
+- npm run test 
 - Npm run start
 
 ## Support and contact details
