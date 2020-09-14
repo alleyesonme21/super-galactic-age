@@ -3,6 +3,10 @@ export default class Planets {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
   }
+  checkEarth() {
+   this.age = 1;
+  }
+
   checkMercury() {
     this.age = parseInt((this.age /= .24).toFixed());
   }
@@ -29,7 +33,7 @@ export default class Planets {
   }
   expectancyVenus() {
     this.checkVenus();
-    const venus = Math.round(this.age - (this.lifeExpectancy/0.24));
+    const venus = Math.round(this.age - (this.lifeExpectancy/0.62));
     if(venus > 0) {
       return `You have ${venus} left to live`;
     } else if(venus < 0) { 
@@ -38,7 +42,7 @@ export default class Planets {
   }
   expectancyMars() {
     this.checkMars();
-    const mars = Math.round(this.age - (this.lifeExpectancy/0.24));
+    const mars = Math.round(this.age - (this.lifeExpectancy/1.88));
     if(mars > 0) {
       return `You have ${mars} left to live`;
     } else if(mars < 0) { 
@@ -47,7 +51,7 @@ export default class Planets {
   }
   expectancyJupiter() {
     this.checkJupiter();
-    const Jupiter = Math.round(this.age - (this.lifeExpectancy/0.24));
+    const Jupiter = Math.round(this.age - (this.lifeExpectancy/11.86));
     if(Jupiter > 0) {
       return `You have ${Jupiter} left to live`;
     } else if(Jupiter < 0) { 
