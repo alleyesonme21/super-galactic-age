@@ -10,22 +10,19 @@
     "test": "jest --coverage"
   },
   "jest": {
-    "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ]
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wattsjmichael/pigdice.git"
+    "url": "https://github.com/alleyesonme21/super-galactic-age.gitt"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wattsjmichael/pigdice/issues"
+    "url": "https://github.com/alleyesonme21/super-galactic-age/issues"
   },
-  "homepage": "https://github.com/wattsjmichael/pigdice#readme",
+  "homepage": "https://github.com/alleyesonme21/super-galactic-age#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
