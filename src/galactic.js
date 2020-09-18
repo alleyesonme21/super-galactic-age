@@ -1,25 +1,30 @@
 export default class Planets {
   constructor(age, lifeExpectancy) {
+    this.planet = "earth";
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
   }
-  checkEarth() {
-   this.age = 1;
+  checkEarth() {  
+   return this.lifeExpectancy
   }
 
   checkMercury() {
-    this.age = parseInt((this.age /= .24).toFixed());
+     this.planet = "mercury"
+   return parseInt((this.age / .24).toFixed());
   }
 
   checkVenus() {
-    this.age = parseInt((this.age /= .62).toFixed());
+     this.planet = "venus"
+   return parseInt((this.age / .62).toFixed());
   }
 
   checkMars() {
-    this.age = parseInt((this.age /= 1.88).toFixed()); 
+     this.planet = "mars"
+   return parseInt((this.age / 1.88).toFixed()); 
   }
   checkJupiter() {
-    this.age = parseInt((this.age /= 11.86).toFixed()); 
+     this.planet = "jupiter"
+    return parseInt((this.age / 11.86).toFixed()); 
   }
 
   expectancyMercury() {
