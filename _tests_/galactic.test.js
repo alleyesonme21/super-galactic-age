@@ -7,7 +7,7 @@ describe('Planets', () => {
   }) 
   test("It will show  you the user current age in Earth", () => {
     
-    expect(planets.checkEarth()).toEqual()
+    expect(planets.checkEarth()).toEqual(90)
   })
 
   // test("It will show  you the user current age in Mercury", () => {
