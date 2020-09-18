@@ -16,7 +16,7 @@ describe('Planets', () => {
   })
 
   test("It will show you the users current age in Venus", () => {
-   ;
+  ;
     expect( planets.checkVenus()).toEqual(61)
   })
 
