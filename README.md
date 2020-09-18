@@ -46,7 +46,7 @@ _The program calculates the life expectancy of a user on Jupiter_
 * Input: 90
 * Output: A user has lived 372 years past life expectancy
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements;
 - Git clone 
 - Open terminal 
 - Cd super-galactic-age
