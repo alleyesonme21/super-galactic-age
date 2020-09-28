@@ -29,7 +29,7 @@ export default class Planets {
 
   expectancyMercury() {
     this.checkMercury();
-    const mercury = Math.round(this.age - (this.lifeExpectancy/0.24));
+    const mercury = Math.round((this.lifeExpectancy/0.24)- this.age);
     if(mercury > 0) {
       return `You have ${mercury} left to live`;
     } else if(mercury < 0) { 
@@ -38,7 +38,7 @@ export default class Planets {
   }
   expectancyVenus() {
     this.checkVenus();
-    const venus = Math.round(this.age - (this.lifeExpectancy/0.62));
+    const venus = Math.round((this.lifeExpectancy/0.62)- this.age );
     if(venus > 0) {
       return `You have ${venus} left to live`;
     } else if(venus < 0) { 
@@ -47,7 +47,7 @@ export default class Planets {
   }
   expectancyMars() {
     this.checkMars();
-    const mars = Math.round(this.age - (this.lifeExpectancy/1.88));
+    const mars = Math.round((this.lifeExpectancy/1.88)- this.age );
     if(mars > 0) {
       return `You have ${mars} left to live`;
     } else if(mars < 0) { 
@@ -56,11 +56,11 @@ export default class Planets {
   }
   expectancyJupiter() {
     this.checkJupiter();
-    const Jupiter = Math.round(this.age - (this.lifeExpectancy/11.86));
-    if(Jupiter > 0) {
-      return `You have ${Jupiter} left to live`;
-    } else if(Jupiter < 0) { 
-      return `You have lived ${Jupiter} past your life expectancy`;
+    const jupiter = Math.round( (this.lifeExpectancy/11.86) - this.age  );
+    if(jupiter > 0) {
+      return `You have ${jupiter} left to live`;
+    } else if(jupiter < 0) { 
+      return `You have lived ${jupiter} past your life expectancy`;
     }
   }
 
