@@ -31,19 +31,19 @@ describe('Planets', () => {
   })
 
   test("It will show the users'years left to live on Mercury", () => {
-    expect(planets.expectancyMercury()).toBe("You have lived -337 past your life expectancy")
+    expect(planets.expectancyMercury()).toBe("You have 337 left to live")
   });
 
   test("It will show the users'years left to live on Venus", () => {
-    expect(planets.expectancyVenus()).toBe("You have lived -107 past your life expectancy")
+    expect(planets.expectancyVenus()).toBe("You have 107 left to live")
   });
 
   test("It will show the users'years left to live on Mars", () => {
-    expect(planets.expectancyMars()).toBe("You have lived -10 past your life expectancy")
+    expect(planets.expectancyMars()).toBe("You have 10 left to live")
   });
 
   test("It will show the users'years left to live on Jupiter", () => {
-    expect(planets.expectancyJupiter()).toBe("You have 30 left to live")
+    expect(planets.expectancyJupiter()).toBe("You have lived -30 past your life expectancy")
   });
   
 })
