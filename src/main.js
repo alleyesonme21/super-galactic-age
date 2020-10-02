@@ -8,12 +8,17 @@ import Planets from './../src/galactic.js';
 $(document).ready(function() {
   $('#formOne').submit(function(event) {
     event.preventDefault();
-    const age = $('#age').val();
-    const expectancyAge  = $("age-expectancy")
+    const age = $("#age").val();
+    const expectancyAge  = $("#age-expectancy").val();
     const inputRadio = $("input:radio[name=expectancy]:checked").val();
-  let planets = new Planets(age, expectancyAge, inputRadio)
-  let result = planets.expectancyMercury().age;
-  console.log(result);
+  let planets = new Planets(age, expectancyAge);
+  if (planets == inputRadio && inputRadio == "earth") {
+    $("#life").append(planets.expectancyEarth());
+  } else if(planets == inputRadio && inputRadio == "mercury") {
+    $("#life").append(planets.expectancyMercury());
+  }
+  console.log(planets);
+  $("#output").show();
 
   });
 }); 
