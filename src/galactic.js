@@ -18,6 +18,7 @@ export default class Planets {
   checkMars() {
     return parseInt((this.age / 1.88).toFixed()); 
   }
+  
   checkJupiter() {
     return parseInt((this.age / 11.86).toFixed()); 
   }
@@ -60,7 +61,7 @@ export default class Planets {
     }
   }
   expectancyJupiter() {
-   let AgeJupiter = this.checkJupiter();
+    let AgeJupiter = this.checkJupiter();
     const jupiter = Math.round((this.lifeExpectancy/11.86) - AgeJupiter);
     if(jupiter > 0) {
       return `You have ${jupiter} left to live`;
@@ -68,5 +69,4 @@ export default class Planets {
       return `You have lived ${jupiter} past your life expectancy`;
     }
   }
-
 }
